@@ -1,3 +1,7 @@
+// Dark Mode Toggle
+function toggleDarkMode() {
+   document.body.classList.toggle("dark-mode");
+}
 // Smooth scrolling for navigation links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
    anchor.addEventListener('click', function (e) {
