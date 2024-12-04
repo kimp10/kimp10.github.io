@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Khutso Mphelo - Portfolio</title>
 <style>
+       /* General Styles */
        body {
            font-family: Arial, sans-serif;
            background-color: #f4f4f4;
@@ -12,115 +13,186 @@
            margin: 0;
            padding: 0;
        }
-       header {
-           background-color: #333;
-           color: white;
-           padding: 20px;
-           text-align: center;
-       }
        h1, h2 {
            margin: 0;
-       }
-       .content {
-           margin: 20px;
-       }
-       .content h2 {
-           color: #333;
-           font-size: 1.5em;
-       }
-       .content ul {
-           list-style-type: square;
-           padding-left: 20px;
-       }
-       .content a {
-           color: #333;
-           text-decoration: none;
-       }
-       .content a:hover {
-           text-decoration: underline;
        }
        .section-title {
            margin-top: 30px;
            padding-top: 10px;
            border-top: 2px solid #333;
        }
+       /* Navbar Styles */
+       .navbar {
+           background-color: #333;
+           position: sticky;
+           top: 0;
+           z-index: 1000;
+           text-align: center;
+           padding: 10px 0;
+       }
+       .navbar ul {
+           list-style-type: none;
+           margin: 0;
+           padding: 0;
+           display: flex;
+           justify-content: center;
+       }
+       .navbar ul li {
+           margin: 0 15px;
+       }
+       .navbar ul li a {
+           color: white;
+           text-decoration: none;
+           font-size: 1.2em;
+       }
+       .navbar ul li a:hover {
+           color: #007bff;
+       }
+       /* Project Cards */
+       .project-card {
+           border: 1px solid #ccc;
+           border-radius: 8px;
+           padding: 16px;
+           margin: 10px;
+           text-align: center;
+           background: #fff;
+           box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+           transition: transform 0.3s ease, box-shadow 0.3s ease;
+       }
+       .project-card:hover {
+           transform: scale(1.05);
+           box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.2);
+       }
+       /* Back-to-Top Button */
+       #back-to-top {
+           position: fixed;
+           bottom: 20px;
+           right: 20px;
+           display: none;
+           background-color: #007bff;
+           color: white;
+           border: none;
+           border-radius: 50%;
+           width: 40px;
+           height: 40px;
+           font-size: 1.5em;
+           cursor: pointer;
+           box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+       }
+       /* Footer Styles */
+       footer {
+           background-color: #333;
+           color: white;
+           text-align: center;
+           padding: 10px;
+           margin-top: 20px;
+       }
+       footer a {
+           color: #007bff;
+           text-decoration: none;
+       }
+       footer a:hover {
+           text-decoration: underline;
+       }
 </style>
 </head>
 <body>
+<!-- Navigation Bar -->
+<nav class="navbar">
+<ul>
+<li><a href="#about">About Me</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#experience">Experience</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+<!-- About Me Section -->
+<section id="about">
 <header>
 <h1>Khutso Mphelo | Portfolio</h1>
 <p>Senior Data Scientist</p>
 </header>
-<div class="content">
-<!-- About Me Section -->
-<section>
-<h2>About Me</h2>
-<p>I am a Senior Data Scientist with a strong background in machine learning, data engineering, and advanced analytics. My work focuses on developing predictive models, optimizing data pipelines, and deriving actionable insights to solve real-world business challenges. With over five years of experience across various industries, I am passionate about leveraging data to make data-driven decisions that impact business outcomes.</p>
+<p>I am a Senior Data Scientist with a strong background in machine learning, data engineering, and advanced analytics. My work focuses on developing predictive models, optimizing data pipelines, and deriving actionable insights to solve real-world business challenges.</p>
 </section>
 <!-- Skills Section -->
-<section class="section-title">
+<section id="skills" class="section-title">
 <h2>Skills</h2>
 <ul>
 <li>Programming Languages: Python, R, SQL, JavaScript</li>
 <li>Machine Learning: Scikit-learn, TensorFlow, PyTorch</li>
 <li>Data Engineering: ETL Pipelines, SQL Server, PostgreSQL, Apache Airflow</li>
-<li>Data Visualization: Power BI, Python (Matplotlib, Seaborn, Plotly)</li>
-<li>Advanced Analytics: Predictive Modeling, Time Series Analysis, NLP</li>
-<li>Cloud Computing: AWS, Azure, Google Cloud Platform</li>
+<li>Data Visualization: Power BI, Matplotlib, Seaborn, Plotly</li>
 </ul>
 </section>
-<!-- Professional Experience Section -->
-<section class="section-title">
-<h2>Professional Experience</h2>
+<!-- Experience Section -->
+<section id="experience" class="section-title">
+<h2>Experience</h2>
 <ul>
 <li>
-<strong>Senior Data Scientist at OUTsurance (June 2023 - Present)</strong>
-<p>Leading the development of predictive models and machine learning solutions to improve risk management and compliance at OUTsurance. Design and manage ETL pipelines for data governance and reporting.</p>
+<strong>Senior Data Scientist at OUTsurance</strong>
+<p>Leading predictive model development and ETL pipelines for risk management.</p>
 </li>
 <li>
-<strong>Data Scientist at BCX (Jan 2022 - May 2023)</strong>
-<p>Developed machine learning models to optimize business processes and deliver insights for various clients across different industries, including finance and retail.</p>
+<strong>Data Scientist at BCX</strong>
+<p>Developed machine learning models for optimizing business processes.</p>
 </li>
-<li>
-<strong>Data Analyst at Comcorp Online (Jan 2021 - Dec 2021)</strong>
-<p>Worked with large datasets to generate reports and analyze customer behavior, contributing to strategic decision-making for the marketing team.</p>
-</li>
-</ul>
-</section>
-<!-- Certifications Section -->
-<section class="section-title">
-<h2>Certifications</h2>
-<ul>
-<li>Certified Data Scientist - Data Science Certification Program (Coursera)</li>
-<li>Machine Learning Specialist - TensorFlow (Google)</li>
-<li>Cloud Computing Fundamentals - AWS Certified Solutions Architect</li>
 </ul>
 </section>
 <!-- Projects Section -->
-<section class="section-title">
+<section id="projects" class="section-title">
 <h2>Projects</h2>
-<ul>
-<li><a href="https://github.com/kimp10/attrition-analysis">Customer Attrition Analysis</a> - A machine learning model predicting customer attrition for a financial services client, resulting in actionable insights to retain customers.</li>
-<li><a href="https://github.com/kimp10/fraud-detection">Fraud Detection Model</a> - A classification model to detect fraudulent transactions in real-time, significantly reducing fraud rates.</li>
-<li><a href="https://github.com/kimp10/sentiment-analysis">Sentiment Analysis of Social Media</a> - Analyzing sentiment from social media posts to predict brand perception using NLP techniques.</li>
-</ul>
-</section>
-<!-- Testimonials Section -->
-<section class="section-title">
-<h2>Testimonials</h2>
-<p><em>"Khutso’s contributions to our machine learning models have been invaluable. His ability to understand complex data and translate it into actionable insights has had a major impact on our business." – Senior Manager at OUTsurance</em></p>
-<p><em>"An exceptional data scientist with a keen eye for detail. Khutso delivered high-quality work on every project he was assigned to, consistently exceeding expectations." – Former Colleague at BCX</em></p>
+<div class="project-card">
+<h3>Customer Attrition Analysis</h3>
+<p>Predictive model to analyze and reduce customer attrition.</p>
+<a href="https://github.com/kimp10/attrition-analysis" target="_blank">View Project</a>
+</div>
+<div class="project-card">
+<h3>Fraud Detection Model</h3>
+<p>Real-time fraud detection classification model.</p>
+<a href="https://github.com/kimp10/fraud-detection" target="_blank">View Project</a>
+</div>
 </section>
 <!-- Contact Section -->
-<section class="section-title">
+<section id="contact" class="section-title">
 <h2>Contact</h2>
-<p>If you would like to get in touch or learn more about my work, feel free to contact me:</p>
-<ul>
-<li>Email: <a href="mailto:khutsomphelo@gmail.com">khutsomphelo@gmail.com</a></li>
-<li>LinkedIn: <a href="https://www.linkedin.com/in/khutso-mphelo" target="_blank">linkedin.com/in/khutso-mphelo</a></li>
-<li>GitHub: <a href="https://github.com/kimp10" target="_blank">github.com/kimp10</a></li>
-</ul>
+<p>Email: <a href="mailto:khutsomphelo@gmail.com">khutsomphelo@gmail.com</a></p>
+<p>LinkedIn: <a href="https://www.linkedin.com/in/khutso-mphelo" target="_blank">linkedin.com/in/khutso-mphelo</a></p>
+<p>GitHub: <a href="https://github.com/kimp10" target="_blank">github.com/kimp10</a></p>
 </section>
-</div>
+<!-- Back-to-Top Button -->
+<button id="back-to-top" onclick="scrollToTop()">↑</button>
+<!-- Footer -->
+<footer>
+<p>&copy; 2024 Khutso Mphelo. All Rights Reserved.</p>
+<p>
+<a href="https://www.linkedin.com/in/khutso-mphelo" target="_blank">LinkedIn</a> |
+<a href="https://github.com/kimp10" target="_blank">GitHub</a>
+</p>
+</footer>
+<!-- JavaScript -->
+<script>
+       // Smooth scrolling
+       document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+           anchor.addEventListener('click', function (e) {
+               e.preventDefault();
+               document.querySelector(this.getAttribute('href')).scrollIntoView({
+                   behavior: 'smooth'
+               });
+           });
+       });
+       // Back-to-top button
+       window.addEventListener('scroll', () => {
+           const button = document.getElementById('back-to-top');
+           if (window.scrollY > 300) {
+               button.style.display = 'block';
+           } else {
+               button.style.display = 'none';
+           }
+       });
+       function scrollToTop() {
+           window.scrollTo({ top: 0, behavior: 'smooth' });
+       }
+</script>
 </body>
 </html>
