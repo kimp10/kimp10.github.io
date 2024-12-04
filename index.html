@@ -4,34 +4,59 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Khutso Mphelo - Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 <style>
        /* General Styles */
        body {
-           font-family: Arial, sans-serif;
-           background-color: #f4f4f4;
-           color: #333;
+           font-family: 'Roboto', sans-serif;
            margin: 0;
            padding: 0;
+           background-color: #f8f9fa;
+           color: #333;
        }
-       h1, h2 {
+       h1, h2, h3 {
            margin: 0;
        }
-       .section-title {
-           margin-top: 30px;
-           padding-top: 10px;
-           border-top: 2px solid #333;
+       section {
+           margin: 20px;
+           padding: 20px;
+           background-color: white;
+           border-radius: 8px;
+           box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
        }
-       /* Navbar Styles */
+       a {
+           color: #007bff;
+           text-decoration: none;
+       }
+       a:hover {
+           text-decoration: underline;
+       }
+       /* Hero Section */
+       .hero {
+           background: linear-gradient(135deg, #007bff, #6c757d);
+           color: white;
+           text-align: center;
+           padding: 50px 20px;
+       }
+       .hero h1 {
+           font-size: 2.5em;
+       }
+       .hero p {
+           font-size: 1.2em;
+       }
+       /* Navigation Bar */
        .navbar {
-           background-color: #333;
            position: sticky;
            top: 0;
-           z-index: 1000;
-           text-align: center;
+           background-color: #333;
            padding: 10px 0;
+           color: white;
+           text-align: center;
+           z-index: 1000;
        }
        .navbar ul {
-           list-style-type: none;
+           list-style: none;
            margin: 0;
            padding: 0;
            display: flex;
@@ -42,105 +67,95 @@
        }
        .navbar ul li a {
            color: white;
-           text-decoration: none;
-           font-size: 1.2em;
+           font-weight: bold;
        }
        .navbar ul li a:hover {
            color: #007bff;
        }
-       /* Project Cards */
+       /* Skills Section */
+       .skills-list li {
+           margin: 5px 0;
+       }
+       /* Projects Section */
        .project-card {
            border: 1px solid #ccc;
            border-radius: 8px;
            padding: 16px;
-           margin: 10px;
-           text-align: center;
+           margin: 10px 0;
            background: #fff;
            box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
            transition: transform 0.3s ease, box-shadow 0.3s ease;
        }
        .project-card:hover {
            transform: scale(1.05);
-           box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.2);
+           box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
        }
-       /* Back-to-Top Button */
-       #back-to-top {
+       /* Contact Section */
+       .contact-links li {
+           list-style: none;
+           margin: 10px 0;
+       }
+       .contact-links a {
+           font-size: 1.2em;
+       }
+       /* Dark Mode */
+       body.dark-mode {
+           background-color: #121212;
+           color: white;
+       }
+       body.dark-mode section {
+           background-color: #1f1f1f;
+           color: white;
+       }
+       body.dark-mode a {
+           color: #66b2ff;
+       }
+       .dark-mode-toggle {
            position: fixed;
-           bottom: 20px;
+           top: 20px;
            right: 20px;
-           display: none;
            background-color: #007bff;
            color: white;
            border: none;
-           border-radius: 50%;
-           width: 40px;
-           height: 40px;
-           font-size: 1.5em;
+           padding: 10px 15px;
+           border-radius: 4px;
            cursor: pointer;
-           box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-       }
-       /* Footer Styles */
-       footer {
-           background-color: #333;
-           color: white;
-           text-align: center;
-           padding: 10px;
-           margin-top: 20px;
-       }
-       footer a {
-           color: #007bff;
-           text-decoration: none;
-       }
-       footer a:hover {
-           text-decoration: underline;
        }
 </style>
 </head>
 <body>
+<!-- Dark Mode Toggle -->
+<button class="dark-mode-toggle" onclick="toggleDarkMode()">Toggle Dark Mode</button>
+<!-- Hero Section -->
+<div class="hero">
+<h1>Khutso Mphelo</h1>
+<p>Senior Data Scientist | Machine Learning Enthusiast</p>
+</div>
 <!-- Navigation Bar -->
 <nav class="navbar">
 <ul>
 <li><a href="#about">About Me</a></li>
 <li><a href="#skills">Skills</a></li>
-<li><a href="#experience">Experience</a></li>
 <li><a href="#projects">Projects</a></li>
 <li><a href="#contact">Contact</a></li>
 </ul>
 </nav>
 <!-- About Me Section -->
 <section id="about">
-<header>
-<h1>Khutso Mphelo | Portfolio</h1>
-<p>Senior Data Scientist</p>
-</header>
+<h2>About Me</h2>
 <p>I am a Senior Data Scientist with a strong background in machine learning, data engineering, and advanced analytics. My work focuses on developing predictive models, optimizing data pipelines, and deriving actionable insights to solve real-world business challenges.</p>
 </section>
 <!-- Skills Section -->
-<section id="skills" class="section-title">
+<section id="skills">
 <h2>Skills</h2>
-<ul>
-<li>Programming Languages: Python, R, SQL, JavaScript</li>
-<li>Machine Learning: Scikit-learn, TensorFlow, PyTorch</li>
-<li>Data Engineering: ETL Pipelines, SQL Server, PostgreSQL, Apache Airflow</li>
-<li>Data Visualization: Power BI, Matplotlib, Seaborn, Plotly</li>
-</ul>
-</section>
-<!-- Experience Section -->
-<section id="experience" class="section-title">
-<h2>Experience</h2>
-<ul>
-<li>
-<strong>Senior Data Scientist at OUTsurance</strong>
-<p>Leading predictive model development and ETL pipelines for risk management.</p>
-</li>
-<li>
-<strong>Data Scientist at BCX</strong>
-<p>Developed machine learning models for optimizing business processes.</p>
-</li>
+<ul class="skills-list">
+<li><i class="fas fa-code"></i> Programming: Python, R, SQL, JavaScript</li>
+<li><i class="fas fa-database"></i> Data Engineering: ETL Pipelines, SQL Server, PostgreSQL</li>
+<li><i class="fas fa-chart-line"></i> Machine Learning: Scikit-learn, TensorFlow, PyTorch</li>
 </ul>
 </section>
 <!-- Projects Section -->
-<section id="projects" class="section-title">
+<section id="projects">
 <h2>Projects</h2>
 <div class="project-card">
 <h3>Customer Attrition Analysis</h3>
@@ -154,22 +169,14 @@
 </div>
 </section>
 <!-- Contact Section -->
-<section id="contact" class="section-title">
+<section id="contact">
 <h2>Contact</h2>
-<p>Email: <a href="mailto:khutsomphelo@gmail.com">khutsomphelo@gmail.com</a></p>
-<p>LinkedIn: <a href="https://www.linkedin.com/in/khutso-mphelo" target="_blank">linkedin.com/in/khutso-mphelo</a></p>
-<p>GitHub: <a href="https://github.com/kimp10" target="_blank">github.com/kimp10</a></p>
+<ul class="contact-links">
+<li><a href="mailto:khutsomphelo@gmail.com"><i class="fas fa-envelope"></i> Email</a></li>
+<li><a href="https://linkedin.com/in/khutso-mphelo" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+<li><a href="https://github.com/kimp10" target="_blank"><i class="fab fa-github"></i> GitHub</a></li>
+</ul>
 </section>
-<!-- Back-to-Top Button -->
-<button id="back-to-top">↑</button>
-<!-- Footer -->
-<footer>
-<p>&copy; 2024 Khutso Mphelo. All Rights Reserved.</p>
-<p>
-<a href="https://www.linkedin.com/in/khutso-mphelo" target="_blank">LinkedIn</a> |
-<a href="https://github.com/kimp10" target="_blank">GitHub</a>
-</p>
-</footer>
 <!-- Link to External JavaScript -->
 <script src="script.js"></script>
 </body>
