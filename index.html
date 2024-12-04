@@ -161,7 +161,7 @@
 <p>GitHub: <a href="https://github.com/kimp10" target="_blank">github.com/kimp10</a></p>
 </section>
 <!-- Back-to-Top Button -->
-<button id="back-to-top" onclick="scrollToTop()">↑</button>
+<button id="back-to-top">↑</button>
 <!-- Footer -->
 <footer>
 <p>&copy; 2024 Khutso Mphelo. All Rights Reserved.</p>
@@ -170,29 +170,7 @@
 <a href="https://github.com/kimp10" target="_blank">GitHub</a>
 </p>
 </footer>
-<!-- JavaScript -->
-<script>
-       // Smooth scrolling
-       document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-           anchor.addEventListener('click', function (e) {
-               e.preventDefault();
-               document.querySelector(this.getAttribute('href')).scrollIntoView({
-                   behavior: 'smooth'
-               });
-           });
-       });
-       // Back-to-top button
-       window.addEventListener('scroll', () => {
-           const button = document.getElementById('back-to-top');
-           if (window.scrollY > 300) {
-               button.style.display = 'block';
-           } else {
-               button.style.display = 'none';
-           }
-       });
-       function scrollToTop() {
-           window.scrollTo({ top: 0, behavior: 'smooth' });
-       }
-</script>
+<!-- Link to External JavaScript -->
+<script src="script.js"></script>
 </body>
 </html>
