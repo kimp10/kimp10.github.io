@@ -4,7 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Khutso Mphelo - Portfolio</title>
+<!-- Google Fonts -->
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+<!-- Font Awesome for Icons -->
 <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 <style>
        /* General Styles */
@@ -18,17 +20,17 @@
        h1, h2, h3 {
            margin: 0;
        }
+       /* Section Styling (Centering and Spacing) */
        section {
-           margin: 50px auto; /* Centers the sections horizontally and adds vertical space */
-           text-align: center; /* Centers the text content inside the sections */
-           max-width: 800px; /* Restricts the width for better readability */
+           margin: 50px auto; /* Centers horizontally */
+           text-align: center; /* Centers text inside each section */
+           max-width: 800px; /* Restricts the width for readability */
+           padding: 20px; /* Adds padding inside sections */
+           background-color: white; /* Keeps a white background for clarity */
+           border-radius: 8px; /* Smooth corners */
+           box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds subtle shadow */
        }
-       section ul {
-           text-align: left; /* Aligns the list items to the left */
-           display: inline-block; /* Centers the list block itself */
-           margin: 0 auto;
-       }
-       /* Navigation Bar */
+       /* Navbar Styling */
        .navbar {
            position: sticky;
            top: 0;
@@ -37,6 +39,7 @@
            color: white;
            text-align: center;
            z-index: 1000;
+           box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
        }
        .navbar ul {
            list-style: none;
@@ -51,9 +54,56 @@
        .navbar ul li a {
            color: white;
            font-weight: bold;
+           text-decoration: none;
+           transition: color 0.3s;
        }
        .navbar ul li a:hover {
            color: #007bff;
+       }
+       /* Skill Lists (Center but Align Left) */
+       section ul {
+           text-align: left;
+           display: inline-block; /* Centers the list block */
+           margin: 0 auto; /* Centers the list container */
+       }
+       /* Project Cards */
+       .project-card {
+           border: 1px solid #ccc;
+           border-radius: 8px;
+           padding: 16px;
+           margin: 10px 0;
+           background: #fff;
+           box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1); /* Adds depth */
+           transition: transform 0.3s ease, box-shadow 0.3s ease; /* Hover effect */
+       }
+       .project-card:hover {
+           transform: scale(1.05); /* Grows slightly */
+           box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2); /* Adds more shadow on hover */
+       }
+       /* Contact Links */
+       .contact-links li {
+           list-style: none;
+           margin: 10px 0;
+       }
+       .contact-links a {
+           font-size: 1.2em;
+           text-decoration: none;
+           color: #007bff;
+       }
+       .contact-links a:hover {
+           text-decoration: underline;
+       }
+       /* Dark Mode */
+       body.dark-mode {
+           background-color: #121212;
+           color: white;
+       }
+       body.dark-mode section {
+           background-color: #1f1f1f;
+           color: white;
+       }
+       body.dark-mode a {
+           color: #66b2ff;
        }
 </style>
 </head>
@@ -84,12 +134,12 @@
 <!-- Projects Section -->
 <section id="projects">
 <h2>Projects</h2>
-<div>
+<div class="project-card">
 <h3>Customer Attrition Analysis</h3>
 <p>Predictive model to analyze and reduce customer attrition.</p>
 <a href="https://github.com/kimp10/attrition-analysis" target="_blank">View Project</a>
 </div>
-<div>
+<div class="project-card">
 <h3>Fraud Detection Model</h3>
 <p>Real-time fraud detection classification model.</p>
 <a href="https://github.com/kimp10/fraud-detection" target="_blank">View Project</a>
@@ -98,11 +148,13 @@
 <!-- Contact Section -->
 <section id="contact">
 <h2>Contact</h2>
-<ul>
+<ul class="contact-links">
 <li><a href="mailto:khutsomphelo@gmail.com"><i class="fas fa-envelope"></i> Email</a></li>
-<li><a href="https://www.linkedin.com/in/khutso-mphelo-datascientist/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+<li><a href="https://linkedin.com/in/khutso-mphelo-datascientist" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
 <li><a href="https://github.com/kimp10" target="_blank"><i class="fab fa-github"></i> GitHub</a></li>
 </ul>
 </section>
+<!-- Link to External JavaScript -->
+<script src="script.js"></script>
 </body>
 </html>
