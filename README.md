@@ -1,28 +1,32 @@
-<h1 align="center">Hi 👋, I'm Khutso Mphelo</h1>
-<h3 align="center">Data Scientist</h3>
-
-<p align="left"> <img src="https://komarev.com/ghpvc/?username=kimp10&label=Profile%20views&color=0e75b6&style=flat" alt="kimp10" /> </p>
-
-<p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=kimp10" alt="kimp10" /></a> </p>
-
-- 🔭 I’m currently working on **LLM**
-
-- 🌱 I’m currently learning **LLM, Deep Learning**
-
-- 👯 I’m looking to collaborate on **Data science projects**
-
-- 📫 How to reach me **khutsomphelo@gmail.com**
-
-<h3 align="left">Connect with me:</h3>
-<p align="left">
-<a href="https://linkedin.com/in/khutso mphelo" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="khutso mphelo" height="30" width="40" /></a>
-</p>
-
-<h3 align="left">Languages and Tools:</h3>
-<p align="left"> <a href="https://aws.amazon.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" alt="aws" width="40" height="40"/> </a> <a href="https://azure.microsoft.com/en-in/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/microsoft_azure/microsoft_azure-icon.svg" alt="azure" width="40" height="40"/> </a> <a href="https://cloud.google.com" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/google_cloud/google_cloud-icon.svg" alt="gcp" width="40" height="40"/> </a> <a href="https://git-scm.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/> </a> <a href="https://www.linux.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="linux" width="40" height="40"/> </a> <a href="https://www.mathworks.com/" target="_blank" rel="noreferrer"> <img src="https://upload.wikimedia.org/wikipedia/commons/2/21/Matlab_Logo.png" alt="matlab" width="40" height="40"/> </a> <a href="https://www.mongodb.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg" alt="mongodb" width="40" height="40"/> </a> <a href="https://www.microsoft.com/en-us/sql-server" target="_blank" rel="noreferrer"> <img src="https://www.svgrepo.com/show/303229/microsoft-sql-server-logo.svg" alt="mssql" width="40" height="40"/> </a> <a href="https://www.mysql.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" alt="mysql" width="40" height="40"/> </a> <a href="https://opencv.org/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/opencv/opencv-icon.svg" alt="opencv" width="40" height="40"/> </a> <a href="https://pandas.pydata.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/2ae2a900d2f041da66e950e4d48052658d850630/icons/pandas/pandas-original.svg" alt="pandas" width="40" height="40"/> </a> <a href="https://www.python.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a> <a href="https://pytorch.org/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/pytorch/pytorch-icon.svg" alt="pytorch" width="40" height="40"/> </a> <a href="https://scikit-learn.org/" target="_blank" rel="noreferrer"> <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg" alt="scikit_learn" width="40" height="40"/> </a> <a href="https://seaborn.pydata.org/" target="_blank" rel="noreferrer"> <img src="https://seaborn.pydata.org/_images/logo-mark-lightbg.svg" alt="seaborn" width="40" height="40"/> </a> <a href="https://www.tensorflow.org" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/tensorflow/tensorflow-icon.svg" alt="tensorflow" width="40" height="40"/> </a> </p>
-
-<p><img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=kimp10&show_icons=true&locale=en&layout=compact" alt="kimp10" /></p>
-
-<p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=kimp10&show_icons=true&locale=en" alt="kimp10" /></p>
-
-<p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=kimp10&" alt="kimp10" /></p>
+# Khutso Mphelo | Portfolio
+Welcome to my personal portfolio! I'm a Senior Data Scientist with expertise in machine learning, data engineering, and advanced analytics. This repository showcases my projects, skills, and experience.
+## Table of Contents
+- [About Me](#about-me)
+- [Skills](#skills)
+- [Projects](#projects)
+- [Contact](#contact)
+## About Me
+I am a Senior Data Scientist specializing in applying machine learning, data engineering, and advanced analytics to solve real-world problems. With a strong background in Applied Mathematics and years of experience working across various industries, I thrive on using data to drive impactful decisions.
+Currently, I work as a **Risk and Data Analytics Specialist** at OUTsurance, where I build and manage ETL pipelines, create advanced analytics reports, and develop predictive models.
+## Skills
+- **Programming Languages**: Python, R, SQL, JavaScript
+- **Machine Learning**: Scikit-learn, TensorFlow, PyTorch
+- **Data Engineering**: ETL Pipelines, SQL Server, PostgreSQL, Apache Airflow
+- **Data Visualization**: Power BI, Tableau, Matplotlib, Seaborn
+- **Cloud Platforms**: AWS, Azure
+- **Other Tools**: Git, Docker, Kubernetes
+## Projects
+### [Customer Attrition Analysis](https://github.com/kimp10/attrition-analysis)
+- Developed a predictive model to reduce customer churn for a major credit card company.
+### [Fraud Detection Model](https://github.com/kimp10/fraud-detection)
+- Used machine learning techniques to build a fraud detection model for financial transactions.
+### [Tweet Location Classifier](https://github.com/kimp10/tweet-location)
+- Built a machine learning model to predict the location of tweets based on their content.
+### [COVID-19 ER Patient Volume Prediction](https://github.com/kimp10/covid-er-volume)
+- Created a time series forecasting model to predict ER patient volumes during the COVID-19 pandemic.
+## Contact
+- **Email**: your.email@example.com
+- **LinkedIn**: [linkedin.com/in/khutso](https://linkedin.com/in/khutso)
+- **GitHub**: [github.com/kimp10](https://github.com/kimp10)
+## License
+This repository is licensed under the MIT License. See the [LICENSE](LICENSE) file for more information.
